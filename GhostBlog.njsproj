@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{cd32a986-607c-4867-afcb-1494e9b08308}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="config.example.js" />
+        <Compile Include="config.js" />
+        <Compile Include="Gruntfile.js" />
+        <Compile Include="index.js" />
+        <Compile Include="server.js" />
+        <Content Include=".git\ms-persist.xml" />
+        <Compile Include="core\index.js" />
+        <Compile Include="core\server.js" />
+        <Content Include="content\data\README.md" />
+        <Content Include="content\images\README.md" />
+        <Content Include="content\plugins\README.md" />
+        <Content Include="content\themes\casper\README.md" />
+        <Content Include="content\themes\casper\assets\css\normalize.css" />
+        <Content Include="content\themes\casper\assets\css\screen.css" />
+        <Content Include="content\themes\casper\assets\fonts\icons.dev.svg" />
+        <Content Include="content\themes\casper\assets\fonts\icons.svg" />
+        <Compile Include="content\themes\casper\assets\js\index.js" />
+        <Compile Include="content\themes\casper\assets\js\jquery.fitvids.js" />
+        <Compile Include="core\client\init.js" />
+        <Compile Include="core\client\markdown-actions.js" />
+        <Compile Include="core\client\mobile-interactions.js" />
+        <Compile Include="core\client\router.js" />
+        <Compile Include="core\client\toggle.js" />
+        <Compile Include="core\server\api.js" />
+        <Compile Include="core\server\bookshelf-session.js" />
+        <Compile Include="core\server\errorHandling.js" />
+        <Compile Include="core\server\filters.js" />
+        <Compile Include="core\server\index.js" />
+        <Compile Include="core\server\mail.js" />
+        <Compile Include="core\server\middleware.js" />
+        <Compile Include="core\server\require-tree.js" />
+        <Compile Include="core\server\update-check.js" />
+        <Content Include="core\shared\favicon.ico" />
+        <Compile Include="core\built\scripts\ghost.js" />
+        <Compile Include="core\built\scripts\ghost.min.js" />
+        <Compile Include="core\built\scripts\helpers.js" />
+        <Compile Include="core\built\scripts\models.js" />
+        <Compile Include="core\built\scripts\templates.js" />
+        <Compile Include="core\built\scripts\vendor.js" />
+        <Compile Include="core\built\scripts\views.js" />
+        <Compile Include="core\client\helpers\index.js" />
+        <Compile Include="core\client\models\base.js" />
+        <Compile Include="core\client\models\post.js" />
+        <Compile Include="core\client\models\settings.js" />
+        <Compile Include="core\client\models\tag.js" />
+        <Compile Include="core\client\models\themes.js" />
+        <Compile Include="core\client\models\uploadModal.js" />
+        <Compile Include="core\client\models\user.js" />
+        <Compile Include="core\client\models\widget.js" />
+        <Compile Include="core\client\tpl\hbs-tpl.js" />
+        <Compile Include="core\client\views\base.js" />
+        <Compile Include="core\client\views\blog.js" />
+        <Compile Include="core\client\views\debug.js" />
+        <Compile Include="core\client\views\editor-tag-widget.js" />
+        <Compile Include="core\client\views\editor.js" />
+        <Compile Include="core\client\views\login.js" />
+        <Compile Include="core\client\views\post-settings.js" />
+        <Compile Include="core\client\views\settings.js" />
+        <Content Include="core\client\assets\css\screen.css" />
+        <Content Include="core\client\assets\fonts\icons.dev.svg" />
+        <Content Include="core\client\assets\fonts\icons.svg" />
+        <Content Include="core\client\assets\img\404-ghost.png" />
+        <Content Include="core\client\assets\img\404-ghost@2x.png" />
+        <Content Include="core\client\assets\img\large.png" />
+        <Content Include="core\client\assets\img\medium.png" />
+        <Content Include="core\client\assets\img\small.png" />
+        <Content Include="core\client\assets\img\touch-icon-ipad.png" />
+        <Content Include="core\client\assets\img\touch-icon-iphone.png" />
+        <Content Include="core\client\assets\img\loadingcat.gif" />
+        <Compile Include="core\client\assets\lib\jquery-utils.js" />
+        <Compile Include="core\client\assets\lib\uploader.js" />
+        <Compile Include="core\client\assets\vendor\chart.min.js" />
+        <Compile Include="core\client\assets\vendor\countable.js" />
+        <Compile Include="core\client\assets\vendor\fastclick.js" />
+        <Compile Include="core\client\assets\vendor\jquery.hammer.min.js" />
+        <Compile Include="core\client\assets\vendor\nprogress.js" />
+        <Compile Include="core\client\assets\vendor\packery.pkgd.min.js" />
+        <Compile Include="core\client\assets\vendor\shortcuts.js" />
+        <Compile Include="core\client\assets\vendor\to-title-case.js" />
+        <Compile Include="core\client\assets\vendor\validator-client.js" />
+        <Compile Include="core\client\assets\vendor\codemirror\codemirror.js" />
+        <Compile Include="core\client\assets\vendor\icheck\jquery.icheck.min.js" />
+        <Compile Include="core\client\assets\vendor\showdown\showdown.js" />
+        <Compile Include="core\client\assets\vendor\codemirror\addon\mode\overlay.js" />
+        <Content Include="core\client\assets\vendor\codemirror\mode\gfm\index.html" />
+        <Compile Include="core\client\assets\vendor\codemirror\mode\gfm\gfm.js" />
+        <Compile Include="core\client\assets\vendor\codemirror\mode\gfm\test.js" />
+        <Content Include="core\client\assets\vendor\codemirror\mode\markdown\index.html" />
+        <Compile Include="core\client\assets\vendor\codemirror\mode\markdown\markdown.js" />
+        <Compile Include="core\client\assets\vendor\codemirror\mode\markdown\test.js" />
+        <Compile Include="core\client\assets\vendor\showdown\extensions\ghostdown.js" />
+        <Compile Include="core\server\api\db.js" />
+        <Compile Include="core\server\api\index.js" />
+        <Compile Include="core\server\api\notifications.js" />
+        <Compile Include="core\server\api\posts.js" />
+        <Compile Include="core\server\api\settings.js" />
+        <Compile Include="core\server\api\tags.js" />
+        <Compile Include="core\server\api\users.js" />
+        <Compile Include="core\server\config\index.js" />
+        <Compile Include="core\server\config\loader.js" />
+        <Compile Include="core\server\config\paths.js" />
+        <Compile Include="core\server\config\theme.js" />
+        <Compile Include="core\server\controllers\admin.js" />
+        <Compile Include="core\server\controllers\frontend.js" />
+        <Content Include="core\server\data\default-settings.json" />
+        <Compile Include="core\server\data\schema.js" />
+        <Compile Include="core\server\helpers\index.js" />
+        <Compile Include="core\server\helpers\template.js" />
+        <Compile Include="core\server\middleware\ghost-busboy.js" />
+        <Compile Include="core\server\middleware\index.js" />
+        <Compile Include="core\server\middleware\middleware.js" />
+        <Compile Include="core\server\models\base.js" />
+        <Compile Include="core\server\models\index.js" />
+        <Compile Include="core\server\models\permission.js" />
+        <Compile Include="core\server\models\post.js" />
+        <Compile Include="core\server\models\role.js" />
+        <Compile Include="core\server\models\session.js" />
+        <Compile Include="core\server\models\settings.js" />
+        <Compile Include="core\server\models\tag.js" />
+        <Compile Include="core\server\models\user.js" />
+        <Compile Include="core\server\permissions\index.js" />
+        <Compile Include="core\server\permissions\objectTypeModelMap.js" />
+        <Compile Include="core\server\plugins\index.js" />
+        <Compile Include="core\server\plugins\loader.js" />
+        <Compile Include="core\server\plugins\proxy.js" />
+        <Compile Include="core\server\routes\admin.js" />
+        <Compile Include="core\server\routes\api.js" />
+        <Compile Include="core\server\routes\frontend.js" />
+        <Compile Include="core\server\routes\index.js" />
+        <Compile Include="core\server\storage\base.js" />
+        <Compile Include="core\server\storage\index.js" />
+        <Compile Include="core\server\storage\localfilesystem.js" />
+        <Compile Include="core\server\data\export\index.js" />
+        <Compile Include="core\server\data\fixtures\index.js" />
+        <Compile Include="core\server\data\import\000.js" />
+        <Compile Include="core\server\data\import\001.js" />
+        <Compile Include="core\server\data\import\002.js" />
+        <Compile Include="core\server\data\import\index.js" />
+        <Compile Include="core\server\data\migration\index.js" />
+        <Content Include="core\shared\img\user-cover.png" />
+        <Content Include="core\shared\img\user-image.png" />
+        <Content Include="core\shared\lang\en_US.json" />
+        <Compile Include="core\shared\lang\i18n.js" />
+        <Compile Include="core\shared\vendor\moment.js" />
+        <Compile Include="core\shared\vendor\underscore.js" />
+        <Compile Include="core\shared\vendor\backbone\backbone.js" />
+        <Compile Include="core\shared\vendor\handlebars\handlebars-runtime.js" />
+        <Compile Include="core\shared\vendor\jquery\jquery-ui-1.10.3.custom.min.js" />
+        <Compile Include="core\shared\vendor\jquery\jquery.fileupload.js" />
+        <Compile Include="core\shared\vendor\jquery\jquery.iframe-transport.js" />
+        <Compile Include="core\shared\vendor\jquery\jquery.js" />
+        <Compile Include="core\shared\vendor\jquery\jquery.ui.widget.js" />
+        <Compile Include="core\shared\vendor\showdown\extensions\github.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".git" />
+        <Folder Include="content\data" />
+        <Folder Include="content\images" />
+        <Folder Include="content\plugins" />
+        <Folder Include="content\themes\casper" />
+        <Folder Include="content\themes\casper\assets\css" />
+        <Folder Include="content\themes\casper\assets\fonts" />
+        <Folder Include="content\themes\casper\assets\js" />
+        <Folder Include="core" />
+        <Folder Include="core\built\scripts" />
+        <Folder Include="core\client" />
+        <Folder Include="core\client\assets\css" />
+        <Folder Include="core\client\assets\fonts" />
+        <Folder Include="core\client\assets\img" />
+        <Folder Include="core\client\assets\lib" />
+        <Folder Include="core\client\assets\vendor" />
+        <Folder Include="core\client\assets\vendor\codemirror" />
+        <Folder Include="core\client\assets\vendor\codemirror\addon\mode" />
+        <Folder Include="core\client\assets\vendor\codemirror\mode\gfm" />
+        <Folder Include="core\client\assets\vendor\codemirror\mode\markdown" />
+        <Folder Include="core\client\assets\vendor\icheck" />
+        <Folder Include="core\client\assets\vendor\showdown" />
+        <Folder Include="core\client\assets\vendor\showdown\extensions" />
+        <Folder Include="core\client\helpers" />
+        <Folder Include="core\client\models" />
+        <Folder Include="core\client\tpl" />
+        <Folder Include="core\client\views" />
+        <Folder Include="core\server" />
+        <Folder Include="core\server\api" />
+        <Folder Include="core\server\config" />
+        <Folder Include="core\server\controllers" />
+        <Folder Include="core\server\data" />
+        <Folder Include="core\server\data\export" />
+        <Folder Include="core\server\data\fixtures" />
+        <Folder Include="core\server\data\import" />
+        <Folder Include="core\server\data\migration" />
+        <Folder Include="core\server\helpers" />
+        <Folder Include="core\server\middleware" />
+        <Folder Include="core\server\models" />
+        <Folder Include="core\server\permissions" />
+        <Folder Include="core\server\plugins" />
+        <Folder Include="core\server\routes" />
+        <Folder Include="core\server\storage" />
+        <Folder Include="core\shared" />
+        <Folder Include="core\shared\img" />
+        <Folder Include="core\shared\lang" />
+        <Folder Include="core\shared\vendor" />
+        <Folder Include="core\shared\vendor\backbone" />
+        <Folder Include="core\shared\vendor\handlebars" />
+        <Folder Include="core\shared\vendor\jquery" />
+        <Folder Include="core\shared\vendor\showdown\extensions" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
